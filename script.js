@@ -44,3 +44,8 @@ const displayPokemon = async () => {
 searchBtn.addEventListener("click", ()=> {
     displayPokemon();
 })
+searchInput.addEventListener("keydown", (event) => {
+    if(event.key === 'Enter'){
+        displayPokemon();
+    }
+})
